@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2MS English Pedagogical Portal | Sequence 1: Habits & Preferences</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emeraldPrimary: '#059669',
+                        emeraldDark: '#047857',
+                        emeraldLight: '#d1fae5',
+                        slateBg: '#f8fafc',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slateBg text-slate-800 font-sans leading-relaxed min-h-screen flex flex-col">
+
+    <!-- Header Section -->
+    <header class="bg-emeraldPrimary text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div>
+                <h1 class="text-3xl font-bold tracking-tight">2MS English Educational Hub</h1>
+                <p class="text-emerald-100 text-sm mt-1">Mohamed Mestfaoui Middle School | Key Stage 3 Curriculum Alignment</p>
+            </div>
+            <div class="bg-emeraldDark px-4 py-2 rounded-lg text-right border border-emerald-400/30">
+                <span class="block text-xs text-emerald-200 uppercase font-semibold">Teacher Platform</span>
+                <span class="text-lg font-medium">Mr. Reguig Imad Eddine</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex space-x-2 sm:space-x-8 overflow-x-auto py-3 no-scrollbar">
+                <button onclick="switchTab('framework')" id="tab-framework" class="tab-btn px-3 py-2 text-sm font-medium rounded-md text-emeraldPrimary bg-emeraldLight border-b-2 border-emeraldPrimary whitespace-nowrap">
+                    <i class="fa-solid fa-compass mr-2"></i>Syllabus & Framework
+                </button>
+                <button onclick="switchTab('sequence')" id="tab-sequence" class="tab-btn px-3 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-emeraldPrimary hover:bg-slate-100 whitespace-nowrap">
+                    <i class="fa-solid fa-layer-group mr-2"></i>Sequence Layout (2MS)
+                </button>
+                <button onclick="switchTab('lessons')" id="tab-lessons" class="tab-btn px-3 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-emeraldPrimary hover:bg-slate-100 whitespace-nowrap">
+                    <i class="fa-solid fa-book-open mr-2"></i>Lesson Framework & Scripts
+                </button>
+                <button onclick="switchTab('assessment')" id="tab-assessment" class="tab-btn px-3 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-emeraldPrimary hover:bg-slate-100 whitespace-nowrap">
+                    <i class="fa-solid fa-clipboard-check mr-2"></i>Assessment & Portfolio
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow">
+
+        <!-- TAB 1: FRAMEWORK -->
+        <section id="content-framework" class="tab-content block space-y-6">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-graduation-cap text-emeraldPrimary mr-3"></i>2MS Competency-Based Approach (CBA) Profile
+                </h2>
+                <p class="text-slate-600 mb-6">
+                    In alignment with the National Curriculum Council didactic guidelines, the second year of middle school (2MS) consolidates foundational competencies from MS1 while deepening communicative fluency, reading comprehension (55 words target), and structured descriptive writing (35 words target)[cite: 123, 126, 127].
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="bg-slate-50 p-4 rounded-lg border-l-4 border-emeraldPrimary">
+                        <h3 class="font-bold text-slate-800 text-sm uppercase mb-1">Global Competence</h3>
+                        <p class="text-xs text-slate-600">Understand, interact orally, and produce short oral and simple written messages of predominantly descriptive and narrative types[cite: 123].</p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-lg border-l-4 border-blue-500">
+                        <h3 class="font-bold text-slate-800 text-sm uppercase mb-1">National Identity</h3>
+                        <p class="text-xs text-slate-600">Be proud of one's cultural heritage, national values, and local community traditions[cite: 120, 123].</p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-lg border-l-4 border-amber-500">
+                        <h3 class="font-bold text-slate-800 text-sm uppercase mb-1">Citizenship</h3>
+                        <p class="text-xs text-slate-600">Show respect for others' feelings and tolerate differences in preferences, habits, and daily routines[cite: 123].</p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-lg border-l-4 border-purple-500">
+                        <h3 class="font-bold text-slate-800 text-sm uppercase mb-1">Openness to World</h3>
+                        <p class="text-xs text-slate-600">Demonstrate genuine curiosity to learn about different lifestyles, international cultures, and global habits[cite: 123].</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Target Competences & Resources Table -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <h3 class="text-xl font-bold text-slate-800 mb-4">Core Domains & Learning Resources Matrix</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm border-collapse">
+                        <thead>
+                            <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
+                                <th class="p-3 font-semibold">Domain</th>
+                                <th class="p-3 font-semibold">Target Competence</th>
+                                <th class="p-3 font-semibold">Linguistic & Cross-Curricular Resources</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200">
+                            <tr>
+                                <td class="p-3 font-medium text-emeraldDark">Oral Comprehension & Production[cite: 124, 125]</td>
+                                <td class="p-3 text-slate-600">Understand and produce short oral messages describing daily habits and preferences using vocal features[cite: 124, 125].</td>
+                                <td class="p-3 text-slate-600">
+                                    <ul class="list-disc list-inside space-y-1 text-xs">
+                                        <li>Vocabulary: Daily routines, leisure activities, sports, frequency adverbs[cite: 124, 125, 158].</li>
+                                        <li>Grammar: Present simple (affirmative/negative), Wh- & Yes/No questions[cite: 125, 158].</li>
+                                        <li>Phonics: Diphthongs (/aɪ/, /eɪ/, /əʊ/), final 's'/'es' pronunciation[cite: 125].</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-medium text-emeraldDark">Written Comprehension[cite: 126]</td>
+                                <td class="p-3 text-slate-600">Interpret simple descriptive texts (~55 words) to extract gist and specific layout features[cite: 126].</td>
+                                <td class="p-3 text-slate-600">
+                                    <ul class="list-disc list-inside space-y-1 text-xs">
+                                        <li>Skimming & Scanning strategies for text features[cite: 126].</li>
+                                        <li>Discourse markers: first, then, after that, but, too[cite: 125].</li>
+                                        <li>Text structural identification (Descriptive format)[cite: 126, 139].</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-medium text-emeraldDark">Written Production[cite: 127]</td>
+                                <td class="p-3 text-slate-600">Produce a simple descriptive message (~35 words) using writing process steps and models[cite: 127].</td>
+                                <td class="p-3 text-slate-600">
+                                    <ul class="list-disc list-inside space-y-1 text-xs">
+                                        <li>Process writing: Brainstorming, selecting, outlining, drafting, revising, publishing[cite: 127, 145, 146, 147].</li>
+                                        <li>Self & Peer Evaluation rubrics (Relevance, Coherence, Correct Usage)[cite: 147, 150].</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: SEQUENCE LAYOUT -->
+        <section id="content-sequence" class="tab-content hidden space-y-6">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <h2 class="text-2xl font-bold text-slate-800 mb-2">Sequence 1: Habits & Preferences</h2>
+                <p class="text-slate-600 mb-6">Pedagogical progression for Middle School Year 2 following the standard national sequence layout[cite: 128, 130].</p>
+
+                <div class="space-y-4">
+                    <!-- Session Card 1 -->
+                    <div class="flex items-start bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <div class="bg-emeraldPrimary text-white rounded-lg p-3 font-bold text-center w-16 mr-4 flex-shrink-0">
+                            S1
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-bold text-slate-800">Get Ready (Initial Situation)[cite: 130, 131]</h3>
+                                <span class="text-xs bg-slate-200 px-2 py-1 rounded">1 Hour[cite: 130]</span>
+                            </div>
+                            <p class="text-xs text-slate-600 mt-1">Presents the targeted problem-solving situation. Diagnostic assessment to collect initial representations stored in student portfolio[cite: 131].</p>
+                        </div>
+                    </div>
+
+                    <!-- Session Card 2 -->
+                    <div class="flex items-start bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <div class="bg-emeraldPrimary text-white rounded-lg p-3 font-bold text-center w-16 mr-4 flex-shrink-0">
+                            S2
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-bold text-slate-800">Listen & Interact[cite: 130, 132]</h3>
+                                <span class="text-xs bg-slate-200 px-2 py-1 rounded">1 Hour[cite: 130]</span>
+                            </div>
+                            <p class="text-xs text-slate-600 mt-1">Oral comprehension & interaction based on authentic listening scripts (Jack & Emma). Focus on predicting, gist, and specific scanning[cite: 95, 132, 133].</p>
+                        </div>
+                    </div>
+
+                    <!-- Session Card 3 -->
+                    <div class="flex items-start bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <div class="bg-emeraldPrimary text-white rounded-lg p-3 font-bold text-center w-16 mr-4 flex-shrink-0">
+                            S3
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-bold text-slate-800">Listen & Consider[cite: 130, 135]</h3>
+                                <span class="text-xs bg-slate-200 px-2 py-1 rounded">1 Hour[cite: 130]</span>
+                            </div>
+                            <p class="text-xs text-slate-600 mt-1">Language forms discovery from listening input. Focus on Adverbs of Frequency (always, sometimes, never) and Present Simple forms[cite: 95, 125, 135].</p>
+                        </div>
+                    </div>
+
+                    <!-- Session Card 4 -->
+                    <div class="flex items-start bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <div class="bg-emeraldPrimary text-white rounded-lg p-3 font-bold text-center w-16 mr-4 flex-shrink-0">
+                            S4
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-bold text-slate-800">Read & Interpret[cite: 130, 137]</h3>
+                                <span class="text-xs bg-slate-200 px-2 py-1 rounded">1 Hour[cite: 130]</span>
+                            </div>
+                            <p class="text-xs text-slate-600 mt-1">Written comprehension (~55 words text). Decoding, repeated reading for fluency, skimming, scanning layout, and key vocabulary practice[cite: 126, 137, 138, 139].</p>
+                        </div>
+                    </div>
+
+                    <!-- Session Card 5 -->
+                    <div class="flex items-start bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <div class="bg-emeraldPrimary text-white rounded-lg p-3 font-bold text-center w-16 mr-4 flex-shrink-0">
+                            S5
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-bold text-slate-800">Read & Consider[cite: 130, 141]</h3>
+                                <span class="text-xs bg-slate-200 px-2 py-1 rounded">1 Hour[cite: 130]</span>
+                            </div>
+                            <p class="text-xs text-slate-600 mt-1">Contextualized grammar discovery from reading. Focus on preference verbs (prefer, like, enjoy + -ing/noun) and Wh-questions[cite: 95, 125, 141, 158].</p>
+                        </div>
+                    </div>
+
+                    <!-- Session Card 6 -->
+                    <div class="flex items-start bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <div class="bg-emeraldPrimary text-white rounded-lg p-3 font-bold text-center w-16 mr-4 flex-shrink-0">
+                            S6
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-bold text-slate-800">Write Together (Guided Writing)[cite: 130, 143]</h3>
+                                <span class="text-xs bg-slate-200 px-2 py-1 rounded">1 Hour[cite: 130]</span>
+                            </div>
+                            <p class="text-xs text-slate-600 mt-1">Collaborative process writing. Brainstorming, mind-mapping, outlining, drafting, and revising a paragraph on habits with peers[cite: 143, 145, 146].</p>
+                        </div>
+                    </div>
+
+                    <!-- Session Card 7 -->
+                    <div class="flex items-start bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <div class="bg-emeraldPrimary text-white rounded-lg p-3 font-bold text-center w-16 mr-4 flex-shrink-0">
+                            S7
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-bold text-slate-800">Write Alone (Individual Writing)[cite: 130, 148]</h3>
+                                <span class="text-xs bg-slate-200 px-2 py-1 rounded">1 Hour[cite: 130]</span>
+                            </div>
+                            <p class="text-xs text-slate-600 mt-1">Autonomous production (~35 words) describing personal daily routine and preferences. Evaluation using criteria checklist[cite: 127, 148, 150].</p>
+                        </div>
+                    </div>
+
+                    <!-- Session Card 8 -->
+                    <div class="flex items-start bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <div class="bg-emeraldPrimary text-white rounded-lg p-3 font-bold text-center w-16 mr-4 flex-shrink-0">
+                            S8
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-bold text-slate-800">Check Your Progress (Evaluation & Portfolio)[cite: 130, 151, 155]</h3>
+                                <span class="text-xs bg-slate-200 px-2 py-1 rounded">1 Hour[cite: 130]</span>
+                            </div>
+                            <p class="text-xs text-slate-600 mt-1">Summative check using initial Get Ready task. Integration into 'My Portfolio' project followed by remediation pause[cite: 129, 151, 155].</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: LESSONS & SCRIPTS -->
+        <section id="content-lessons" class="tab-content hidden space-y-6">
+            
+            <!-- Listening Scripts Card -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-file-audio text-emeraldPrimary mr-3"></i>2MS Sequence 1 Listening Scripts
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Script 1 -->
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="font-bold text-emeraldDark text-sm uppercase">Listen & Interact Script[cite: 95]</span>
+                            <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">Yard Conversation[cite: 95]</span>
+                        </div>
+                        <div class="text-xs text-slate-700 italic space-y-2 bg-white p-3 rounded border border-slate-100">
+                            <p><strong>Emma:</strong> Jack! What do you do every day?[cite: 95]</p>
+                            <p><strong>Jack:</strong> Well, I always wake up at 7 o’clock. First, I get ready for school and then I have my breakfast.[cite: 95]</p>
+                            <p><strong>Emma:</strong> Me too! But I sometimes wake up late. After that, I eat breakfast. I always eat toast. I don’t like milk. I prefer drinking juice. What about you?[cite: 95]</p>
+                            <p><strong>Jack:</strong> I always have cereals with milk. After that, I pack my bag and ride my bike to school.[cite: 95]</p>
+                            <p><strong>Emma:</strong> I never go to school by bus, I enjoy walking. It’s fun![cite: 95]</p>
+                            <p><strong>Jack:</strong> Nice! Maybe I will walk sometimes, too![cite: 95]</p>
+                        </div>
+                    </div>
+
+                    <!-- Script 2 -->
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="font-bold text-emeraldDark text-sm uppercase">Check Your Progress Script[cite: 96]</span>
+                            <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">Daily Routine Exchange[cite: 96]</span>
+                        </div>
+                        <div class="text-xs text-slate-700 italic space-y-2 bg-white p-3 rounded border border-slate-100">
+                            <p><strong>Peter:</strong> Hi Sarah, how is your day going?[cite: 96]</p>
+                            <p><strong>Sarah:</strong> Oh, hello Peter. My day always starts at 6:30. But I don’t get out of bed immediately. First, I get ready and have a hot chocolate for my breakfast. Then, I go to school on foot.[cite: 96]</p>
+                            <p><strong>Peter:</strong> I prefer eating a fruit during the break at school.[cite: 96]</p>
+                            <p><strong>Sarah:</strong> Nice! What do you do in the evening?[cite: 96]</p>
+                            <p><strong>Peter:</strong> Well, I enjoy playing video games. Ah, I sometimes play basketball too. After that, I revise my lessons and go to bed.[cite: 96]</p>
+                            <p><strong>Sarah:</strong> I rarely exercise; I’m not a sporty person. I prefer reading stories.[cite: 96]</p>
+                            <p><strong>Peter:</strong> Well, we have different habits and preferences![cite: 96]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Lesson Plan Template -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 space-y-4">
+                <div class="border-b border-slate-200 pb-3 flex justify-between items-center">
+                    <h3 class="text-lg font-bold text-slate-800">Sample Lesson Framework: Listen & Consider (2MS)[cite: 135]</h3>
+                    <span class="text-xs font-semibold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded">Target: Adverbs of Frequency & Routine Verbs[cite: 125, 135]</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs bg-slate-50 p-3 rounded-lg">
+                    <div><strong>Framework Stage:</strong> Discovery - Practice - Use[cite: 135, 136]</div>
+                    <div><strong>Perceptual Style:</strong> VAKT (Visual, Auditory, Kinesthetic)[cite: 105]</div>
+                    <div><strong>Interaction:</strong> T-S, S-S Pairwork[cite: 136]</div>
+                </div>
+
+                <div class="space-y-3 text-sm">
+                    <!-- Stage 1 -->
+                    <div class="border-l-2 border-emeraldPrimary pl-3">
+                        <h4 class="font-bold text-slate-800 text-xs uppercase">Stage 1: Presentation & Context Discovery[cite: 135]</h4>
+                        <p class="text-xs text-slate-600 mt-1">Re-isolate targeted chunks from Jack and Emma's dialogue[cite: 95, 135]: "I <u>always</u> wake up at 7 o'clock", "I <u>sometimes</u> wake up late", "I <u>never</u> go to school by bus."[cite: 95] Elicit student awareness using CCQs (Concept Checking Questions) on frequency position[cite: 141].</p>
+                    </div>
+                    <!-- Stage 2 -->
+                    <div class="border-l-2 border-emeraldPrimary pl-3">
+                        <h4 class="font-bold text-slate-800 text-xs uppercase">Stage 2: Mechanical & Guided Practice[cite: 135, 136]</h4>
+                        <p class="text-xs text-slate-600 mt-1">Repetition drills, substitution drills using activity cards (e.g., [always/eat breakfast], [never/drink soda])[cite: 135, 136]. Substitution pair work: <em>"What do you do in the morning? I always..."[cite: 95, 136]</em></p>
+                    </div>
+                    <!-- Stage 3 -->
+                    <div class="border-l-2 border-emeraldPrimary pl-3">
+                        <h4 class="font-bold text-slate-800 text-xs uppercase">Stage 3: Communicative Use & Personalization[cite: 136]</h4>
+                        <p class="text-xs text-slate-600 mt-1">Students interview their peer regarding their daily habits and preferences, recording responses into a survey table[cite: 136].</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: ASSESSMENT & PORTFOLIO -->
+        <section id="content-assessment" class="tab-content hidden space-y-6">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-square-check text-emeraldPrimary mr-3"></i>Assessment & Portfolio Management
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Evaluation Checklist -->
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <h3 class="font-bold text-slate-800 text-sm mb-3">Written Production Checklist (Write Alone)[cite: 147, 150]</h3>
+                        <div class="space-y-2 text-xs">
+                            <div class="flex items-center justify-between p-2 bg-white rounded border border-slate-100">
+                                <span><strong>Relevance:</strong> Adheres to topic (habits & preferences, ~35 words)[cite: 127, 147].</span>
+                                <span class="text-emeraldDark font-bold">Yes / No[cite: 147]</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 bg-white rounded border border-slate-100">
+                                <span><strong>Coherence:</strong> Logical layout using chronological markers (first, then, after that)[cite: 125, 147].</span>
+                                <span class="text-emeraldDark font-bold">Yes / No[cite: 147]</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 bg-white rounded border border-slate-100">
+                                <span><strong>Correct Usage:</strong> Accurate Present Simple, adverbs placement & punctuation[cite: 125, 148].</span>
+                                <span class="text-emeraldDark font-bold">Yes / No[cite: 148]</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 bg-white rounded border border-slate-100">
+                                <span><strong>Values & Excellence:</strong> Expresses personal choices with neat presentation[cite: 148].</span>
+                                <span class="text-emeraldDark font-bold">Yes / No[cite: 148]</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Guide -->
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <h3 class="font-bold text-slate-800 text-sm mb-3">My Portfolio Structure (2MS Project)[cite: 155]</h3>
+                        <ul class="list-disc list-inside space-y-2 text-xs text-slate-600">
+                            <li><strong>Cover Page:</strong> Title, Learner's Name, Class (2MS), Teacher (Mr. Reguig Imad), School (Mohamed Mestfaoui)[cite: 155].</li>
+                            <li><strong>Introduction:</strong> Brief summary of Sequence 1 topic[cite: 155].</li>
+                            <li><strong>Main Artifacts:</strong>
+                                <ul class="list-circle list-inside ml-4 mt-1 space-y-1">
+                                    <li>Initial 'Get Ready' diagnostic sheet[cite: 131, 151, 155].</li>
+                                    <li>Key vocabulary charts & frequency adverb mind-maps[cite: 155].</li>
+                                    <li>Final 'Write Alone' descriptive paragraph[cite: 148, 155].</li>
+                                </ul>
+                            </li>
+                            <li><strong>Reflection:</strong> Personal progress commentary & self-evaluation[cite: 155].</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-400 py-6 border-t border-slate-700 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs space-y-2">
+            <p>2MS English Pedagogical Portal &copy; 2026 | Mohamed Mestfaoui Middle School</p>
+            <p class="text-slate-500">Designed in accordance with the National Curriculum Council Didactic Guidelines for English Language Teaching in Algeria[cite: 97].</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Navigation Script -->
+    <script>
+        function switchTab(tabId) {
+            // Hide all tab content
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+                content.classList.remove('block');
+            });
+
+            // Reset tab button styles
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('text-emeraldPrimary', 'bg-emeraldLight', 'border-b-2', 'border-emeraldPrimary');
+                btn.classList.add('text-slate-600');
+            });
+
+            // Show target content
+            const activeContent = document.getElementById('content-' + tabId);
+            if (activeContent) {
+                activeContent.classList.remove('hidden');
+                activeContent.classList.add('block');
+            }
+
+            // Highlight active tab button
+            const activeTab = document.getElementById('tab-' + tabId);
+            if (activeTab) {
+                activeTab.classList.add('text-emeraldPrimary', 'bg-emeraldLight', 'border-b-2', 'border-emeraldPrimary');
+                activeTab.classList.remove('text-slate-600');
+            }
+        }
+    </script>
+</body>
+</html>
